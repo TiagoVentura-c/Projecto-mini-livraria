@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Livraria do Tiago</string>
+    <string name="email_hint">email@example.com</string>
+    <string name="esqueci_usuario_e_ou_senha">Esqueci meu usuário e/ou senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar_se">Cadastrar-se</string>
+    <string name="privacidade">Privacidade</string>
+    <string name="textMainPassword">*******</string>
+    <string name="gostei">Gostei</string>
+</resources>
