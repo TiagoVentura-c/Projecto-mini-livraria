@@ -87,4 +87,17 @@ public class Ator implements Serializable {
     public void setGostei(boolean gostei) {
         this.gostei = gostei;
     }
+
+    @Override
+    public String toString() {
+        return "Ator{" +
+                "uid=" + uid +
+                ", foto='" + foto + '\'' +
+                ", nomeAtor='" + nomeAtor + '\'' +
+                ", nomeFilme='" + nomeFilme + '\'' +
+                ", fotoFilme='" + fotoFilme + '\'' +
+                ", descricaoFilme='" + descricaoFilme + '\'' +
+                ", gostei=" + gostei +
+                '}';
+    }
 }

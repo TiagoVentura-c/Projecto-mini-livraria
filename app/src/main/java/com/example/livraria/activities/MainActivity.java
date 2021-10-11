@@ -13,6 +13,7 @@ import com.example.livraria.R;
 import com.example.livraria.entities.Ator;
 import com.example.livraria.entities.Usuario;
 import com.example.livraria.tasks.AsyncAtorInsert;
+import com.example.livraria.tasks.AsyncAtorSelectAll;
 import com.example.livraria.tasks.AsyncUsuarioInsert;
 import com.example.livraria.utils.AppDatabase;
 
@@ -50,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 ator.setNomeFilme("Piratas do caribe");
                 ator.setDescricaoFilme("Lorem Ipsum sit anet dolor");
 
-                new AsyncAtorInsert(MainActivity.this,ator).execute();
-                new AsyncUsuarioInsert(MainActivity.this, usuario).execute();
+                //new AsyncAtorInsert(MainActivity.this,ator).execute();
+                //new AsyncUsuarioInsert(MainActivity.this, usuario).execute();
+                new AsyncAtorSelectAll(MainActivity.this).execute();
 
                 Intent intent = new Intent(MainActivity.this, AtorActivity.class);
                 intent.putExtra("usuario", usuario);

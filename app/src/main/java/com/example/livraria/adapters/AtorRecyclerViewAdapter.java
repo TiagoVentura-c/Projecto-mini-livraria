@@ -1,4 +1,4 @@
-package com.example.livraria;
+package com.example.livraria.adapters;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.livraria.R;
 import com.example.livraria.dummy.DummyContent.DummyItem;
 import com.example.livraria.entities.Ator;
 
