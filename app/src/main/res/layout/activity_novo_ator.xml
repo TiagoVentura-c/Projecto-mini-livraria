@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".activities.NovoAtorActivity">
 
+    <EditText
+        android:id="@+id/editNovoAtorDescricaoFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/descri_o_do_filme"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorFilme" />
+
+    <EditText
+        android:id="@+id/editNovoAtorNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/nome_do_ator"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNovoAtorFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/nome_do_filme"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorNome" />
+
+    <Button
+        android:id="@+id/buttonNovoAtorSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme" />
+
+    <Button
+        android:id="@+id/buttonNovoAtorCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:text="Cancelar"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNovoAtorSalvar"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme" />
 </androidx.constraintlayout.widget.ConstraintLayout>

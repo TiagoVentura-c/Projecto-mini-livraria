@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Livraria">
-        <activity android:name=".activities.AtorActivity"></activity>
-
-        <activity android:name=".activities.MainActivity" android:theme="@style/NoActionBar">
+        <activity
+            android:label="Editar ator"
+            android:name=".activities.EditarAtorActivity"></activity>
+        <activity
+            android:name=".activities.NovoAtorActivity"
+            android:label="Cadastrar novo ator" />
+        <activity
+            android:label="Filmes"
+            android:name=".activities.AtorActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

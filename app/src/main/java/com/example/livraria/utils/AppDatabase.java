@@ -15,11 +15,14 @@ import com.example.livraria.entities.Usuario;
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UsuarioDao userDao();
     public abstract AtorDao atorDao();
-
+    public static AppDatabase connection;
 
     public static AppDatabase getConnection(Context appContext){
-        return Room.databaseBuilder(appContext, AppDatabase.class, "app_database")
-                .fallbackToDestructiveMigration().build();
+        if(connection == null){
+            connection = Room.databaseBuilder(appContext, AppDatabase.class, "app_database")
+                    .fallbackToDestructiveMigration().build();
+        }
+        return connection;
     }
 
 }

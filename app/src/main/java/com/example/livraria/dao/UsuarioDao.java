@@ -14,7 +14,7 @@ public interface UsuarioDao {
     @Query("SELECT * FROM users")
     List<Usuario> getAll();
 
-    @Query("SELECT * FROM users WHERE email = :email LIMIT 1")
+    @Query("SELECT * FROM users WHERE email = :email")
     Usuario findByEmail(String email);
 
     @Insert

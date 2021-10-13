@@ -2,6 +2,7 @@ package com.example.livraria.adapters;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,21 +12,23 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.livraria.R;
-import com.example.livraria.dummy.DummyContent.DummyItem;
+import com.example.livraria.activities.EditarAtorActivity;
 import com.example.livraria.entities.Ator;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem}.
- * TODO: Replace the implementation with code for your data type.
- */
+
 public class AtorRecyclerViewAdapter extends RecyclerView.Adapter<AtorRecyclerViewAdapter.ViewHolder> {
 
-    private final List<Ator> mAtores;
+    private List<Ator> mAtores;
 
     public AtorRecyclerViewAdapter(List<Ator> items) {
         mAtores = items;
+    }
+
+    public void setAtores(List<Ator> atores){
+        mAtores = atores;
+        notifyDataSetChanged();
     }
 
     @Override
@@ -34,6 +37,7 @@ public class AtorRecyclerViewAdapter extends RecyclerView.Adapter<AtorRecyclerVi
                 .inflate(R.layout.fragment_ator, parent, false);
         return new ViewHolder(view);
     }
+
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
@@ -47,7 +51,10 @@ public class AtorRecyclerViewAdapter extends RecyclerView.Adapter<AtorRecyclerVi
         holder.mView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Log.e("teste", "Cliclou na lista");
+                Intent intent = new Intent(holder.mView.getContext(), EditarAtorActivity.class);
+                intent.putExtra("ator", holder.mAtor);
+                holder.mView.getContext().startActivity(intent);
+
             }
         });
 

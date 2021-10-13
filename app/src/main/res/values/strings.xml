@@ -7,4 +7,7 @@
     <string name="privacidade">Privacidade</string>
     <string name="textMainPassword">*******</string>
     <string name="gostei">Gostei</string>
+    <string name="nome_do_filme">Nome do filme</string>
+    <string name="nome_do_ator">Nome do ator</string>
+    <string name="descri_o_do_filme">Descrição do filme</string>
 </resources>
