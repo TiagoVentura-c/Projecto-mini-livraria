@@ -52,8 +52,8 @@
         android:id="@+id/buttonNovoAtorSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="40dp"
         android:text="Salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme" />
@@ -62,10 +62,53 @@
         android:id="@+id/buttonNovoAtorCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="12dp"
         android:text="Cancelar"
         app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintEnd_toStartOf="@+id/buttonNovoAtorSalvar"
         app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme" />
+
+    <Button
+        android:id="@+id/buttonNovoAtorFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Foto ator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme" />
+
+    <Button
+        android:id="@+id/buttonNovoAtorFotoFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Foto filme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNovoAtorFoto" />
+
+    <ImageView
+        android:id="@+id/imageViewNovoAtorFoto"
+        android:layout_width="82dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/buttonNovoAtorFoto"
+        app:layout_constraintTop_toBottomOf="@+id/editNovoAtorDescricaoFilme"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageView
+        android:id="@+id/imageViewNovoAtorFotoFilme"
+        android:layout_width="84dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonNovoAtorFotoFilme"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNovoAtorFoto"
+        app:srcCompat="@android:drawable/ic_menu_crop" />
 </androidx.constraintlayout.widget.ConstraintLayout>
