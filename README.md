@@ -4,5 +4,5 @@ Neste mini projecto pratico minhas habilidades.
 Utilizo Java e SQLite.
 
 O objectivo do aplicativo é implementar um CRUD 
-com o cadastro de atores, livro e outros usuários e imagens.
+com o cadastro de atores, livro e outros usuários e imagens
 --
